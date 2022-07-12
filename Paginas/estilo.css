@@ -21,6 +21,17 @@ height: 30%;
 }
 a .header__logo{
 height: 100%;
+animation-name: aparicionLogo;
+animation-duration: 3s;
+}
+@keyframes aparicionLogo {
+    from{
+        transform: translateX(-300px)
+    }
+    to{
+        transform: translateX(0px);
+    }
+    
 }
 .header__btn{
     color: #ffffff;
@@ -61,7 +72,18 @@ height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: aparicionImagenFondo;
+animation-duration: 3s;
 }
+@keyframes aparicionImagenFondo {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 .textoPrincipal{
     display: flex;
     height: 400px;
@@ -98,7 +120,8 @@ padding: 30px;
     font-family: 'Kanit', sans-serif;
     font-size: 15px;
     text-align: center;
-    height: 90vh;
+    height: 100vh;
+    background-image: url(../Recursos/fondoNuestroServicio.svg);
 }
 .nuestroServicio__titulo{
     margin-top: 50px;
@@ -356,11 +379,11 @@ font-size: 20px;
     list-style-type: none;
 }
 .preguntasFrecuentes li {
-    background-color: #ffa600;
+    background-image: linear-gradient(to right, #ffa600,#ffa6006d);
     padding-left: -10px;
 }
 .preguntasFrecuentes ol {
-    background-color: #06050530;
+    background-image: linear-gradient(to right, #0000007c,darkgray);
     margin-left: 15px;
 }
 .preguntasFrecuentes h2 {
