@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;1,500&display=swap');
+/* font-family: 'Kanit', sans-serif; */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@media only screen and (min-width: 0px){
+.header{
+    background-color: rgba(89, 83, 83,0.90);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+.header__logo{
+height: 30%;
+}
+a .header__logo{
+height: 100%;
+}
+.header__btn{
+    color: #ffffff;
+    font-size:x-small;
+    background-color: rgba(71, 68, 68, 0.553);
+    border-color: rgba(255, 166, 0, 0.491);
+    border-radius: 10px;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    padding: 5px;
+}
+.header__btn:hover{
+    color: #ffa600;
+    font-size:x-small;
+    background-color: rgba(138, 137, 137, 0.553);
+    border-color: rgba(255, 166, 0,1);
+    border-radius: 15px;
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+}
+.menuHamburguesa{
+    color: #ffffff;
+    font-size: 30px;
+    padding: 20px 0px 20px 30px;
+    margin-right: 20px;
+}
+.header ul{
+    display: none;
+}
+.pagina1{
+    width: 100%;
+    height: 100vh;
+    transform: rotate(180deg);
+    background-size: cover;
+    background-position: right;
+    font-family: 'Kanit', sans-serif;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.01),rgba(0,0,0,1)), url(../Recursos/imagenfondo.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textoPrincipal{
+    display: flex;
+    height: 400px;
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(227, 191, 11, 0.301);
+    border-radius: 15px;
+    text-shadow: 2px 1px 1px rgba(109, 106, 106, 0.6);
+    transform: rotate(-180deg);
+}
+.textoPrincipal h1{
+    font-size: 30px;
+}
+.textoPrincipal a{
+align-self: center;
+padding: 30px;
+}
+.textoPrincipal p{
+    font-size: 20px;
+}
+.textoPrincipal button{
+    border-radius: 10px;
+    border: solid 2px whitesmoke;
+    background-color: #ffa600;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: x-large;
+}
+.nuestroServicio{
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    height: 90vh;
+}
+.nuestroServicio__titulo{
+    margin-top: 50px;
+    padding: 10px;
+}
+.nuestroServicio__pasos{
+display: grid;
+grid-template-columns: 1fr 1fr;
+padding: 10px;
+row-gap: 30px;
+}
+.nuestroServicio__pasos strong{
+    font-size: 20px;
+    color: #ffa600;
+}
+.nuestroServicio__pasos.imagen1{
+    background-image: url(../Recursos/1.jpg);
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 4px rgba(129,154,36,255);
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.nuestroServicio__pasos.imagen2{
+    grid-template-columns: 1fr;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.nuestroServicio__pasos.imagen3{
+    grid-template-columns: 1fr;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.nuestroServicio__pasos .imagen4{
+    background-image: url(../Recursos/2.jpg);
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 4px rgba(2,139,184,255);
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.nuestroServicio__pasos .imagen5{
+    background-image: url(../Recursos/3.jpg);
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 4px rgba(194,78,39,255);
+    grid-column: 1/2;
+    grid-row: 3/4
+}
+.nuestroServicio__pasos.imagen6{
+    grid-template-columns: 1fr;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.nuestrosClientes{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+    font-family: 'Kanit', sans-serif;
+    padding: 10px;
+    justify-content: flex-start;
+    text-align: center;
+}
+.nuestrosClientes__titulo{
+    padding: 10px;
+}
+.nuestrosClientes__galeria{
+width: 90%;
+height: 60vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+}
+.item{
+    margin: 5px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 2px 2px 2px orange;
+    border-radius: 15px;
+}
+.item:hover{
+    transform: scale(1.05);
+    transition: 0.8s;
+    cursor: pointer
+}
+.clientesimg1{
+    background-image: url(../Recursos/Clientes/alma.png) ;
+    background-size:  100% auto;
+    background-repeat: no-repeat;
+    background-position:center ;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.clientesimg2{
+    background-image: url(../Recursos/Clientes/casachetta.png);
+    background-size:  100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 2/5;
+    grid-row: 1/2;
+}
+.clientesimg3{
+    background-image:url(../Recursos/Clientes/Ruhrpumpen.png) ;
+    background-size:  100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    filter: grayscale(1);
+}
+.clientesimg4{
+    background-image: url(../Recursos/Clientes/images.jpg);
+    background-size:  100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    filter: grayscale(1);
+}
+.clientesimg5{
+    background-image:url(../Recursos/Clientes/ternuritas.jpg) ;
+    background-size:  100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    filter: grayscale(1);
+}
+.clientesimg6{
+    background-image:url(../Recursos/Clientes/cavaliere.png) ;
+    background-size:  100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    filter: grayscale(1);
+}
+.clientesimg7{
+    background-image:url(../Recursos/Clientes/mostaza.png) ;
+    background-size:  100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.clientesimg8{
+    background-image: url(../Recursos/Clientes/moha.png) ;
+    background-size:  100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+.logoWTPflotante{
+    color: #ffa600;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    line-height: 55px;
+    bottom: 60px;
+    right: 45px;
+    background: #ffffffdc;
+    border-radius: 50px;
+    text-align:center;
+    font-size: 30px;
+}
+.logoWTPflotante:hover{
+    color: #ffffff;
+    background:#ffa60099;
+    transform: scale(1.1);
+    transition: 0.8s;
+}
+.footer{
+    height: 80px;
+    background-color: rgba(89, 83, 83,0.90);
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    font-size: small;
+    justify-content: space-between;
+    padding: 8px 20px;
+}
+.footer__btn button {
+    border-radius: 10px;
+    border: solid 2px whitesmoke;
+    background-color: #ffa600;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+}
+.logos{
+    color: #ffffff;
+    padding: 5px;
+    font-size: 20px;
+}
+/* CONTACTANOS */
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    justify-items: center;
+}
+#contacto h3{
+margin-top: 100px;
+color: #ffa600;
+font-size: 20px;
+}
+#nuevoUsuario h3{
+    color: #ffa600;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.contacto fieldset{
+    margin: 20px 0px;
+    padding: 20px;
+    line-height: 40px;
+    min-height: 65vh;
+    width: 70%;
+    font-size: large;
+}
+.contacto__btn{
+    padding: 10px; 
+    border-radius: 15px;
+    border: solid 2px #ffa600;
+    color: #ffffff;
+    background-color: rgba(89, 83, 83,0.90);
+    font-weight: bolder;
+    font-size: x-small;
+}
+/* Preguntas Frecuentes */
+.preguntasFrecuentes{
+    font-family: 'Kanit', sans-serif;
+    padding: 100px 20px 40px 20px;
+    line-height: 30px;
+    background-color: darkgray;
+    color: #ffffff;
+}
+.preguntasFrecuentes ul {
+    list-style-type: none;
+}
+.preguntasFrecuentes li {
+    background-color: #ffa600;
+    padding-left: -10px;
+}
+.preguntasFrecuentes ol {
+    background-color: #06050530;
+    margin-left: 15px;
+}
+.preguntasFrecuentes h2 {
+    padding: 20px;
+    font-size: 30px;
+    }
+.preguntasFrecuentes h4 {
+padding: 20px;
+font-size: 20px;
+}
+}
+@media only screen and (min-width: 400px){
+    .header__logo{
+    height: 50%;
+    }
+    .header__btn{
+        font-size:small;
+    }
+    .header__btn:hover{
+        font-size:small;
+    }
+    .menuHamburguesa{
+        font-size: 50px;
+    }
+    .textoPrincipal h1{
+        font-size: 40px;
+    }
+    .textoPrincipal p{
+        font-size: 25px;
+    }
+    .textoPrincipal button{
+        font-size: xx-large;
+    }
+    .nuestroServicio{
+        font-size: 20px;
+    }
+    .nuestroServicio__pasos strong{
+        font-size: 20px;
+        color: #ffa600;
+    }
+    .nuestroServicio__pasos.imagen1{
+        background-size: auto 100%;
+    }
+    .nuestroServicio__pasos .imagen4{
+        background-size: 100% auto;
+    }
+    .nuestroServicio__pasos .imagen5{
+        background-size: 100% auto; 
+    }
+    .logoWTPflotante{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 36px;
+    }
+    .footer{
+        font-size: medium;
+    }
+    .logos{
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 520px){
+    .nuestroServicio{
+        font-size: 25px;
+    }
+    .nuestroServicio__pasos strong{
+        font-size: 25px;
+        color: #ffa600;
+    }
+    .nuestroServicio__pasos.imagen1{
+        background-size: auto 100%;
+    }
+    .nuestroServicio__pasos .imagen4{
+        background-size: 100% auto;
+    }
+    .nuestroServicio__pasos .imagen5{
+        background-size: 100% auto; 
+    }
+    .logoWTPflotante{
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 45px;
+    }
+    .footer{
+        font-size: large;
+    }
+    .logos{
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width: 720px){
+    .menuHamburguesa{
+        color: #ffffff;
+        font-size: 30px;
+        padding: 20px 0px 20px 30px;
+        margin-right: 20px;
+        display: none;
+    }
+    .header ul{
+        display: flex;
+        width: 30%;
+        margin-right: 80px;
+        list-style-type: none;
+        font-family: 'Kanit', sans-serif;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+    .header ul li a{
+        color: #ffffff;
+        text-decoration: none;
+
+    }
+    .nuestroServicio{
+        font-size: 25px;
+        height:90vh;
+        }
+        .nuestroServicio__pasos{
+        row-gap: 15px;
+        width: 70%;
+        margin: 0 15%;
+        }
+    .nuestroServicio__pasos.imagen1{
+        background-size: auto 100%;
+    }
+    .nuestroServicio__pasos .imagen4{
+        background-size: 100% auto;
+    }
+    .nuestroServicio__pasos .imagen5{
+        background-size: 100% auto; 
+    }
+    .clientesimg1{
+        background-size: auto 100% ;
+    }
+    .clientesimg2{
+        background-size: auto 100% ;
+    }
+    .clientesimg3{
+        background-size: auto 100% ;
+    }
+    .clientesimg4{
+        background-size: auto 100% ;
+    }
+    .clientesimg5{
+        background-size: auto 100% ;
+    }
+    .clientesimg6{
+        background-size: auto 100% ;
+    }
+    .clientesimg7{
+        background-size: auto 100% ;
+    }
+    .clientesimg8{
+        background-size: auto 100% ;
+    }
+    .logoWTPflotante{
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+        font-size: 45px;
+    }
+    .footer{
+        font-size: large;
+    }
+    .logos{
+        font-size: 30px;
+    }
+    /* CONTACTANOS */
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70vh;
+}
+#contacto h3{
+    font-size: 20px;
+    margin-top: 100px;
+    text-align: center;
+    padding: 0px;
+}
+#nuevoUsuario h3{
+    font-size: 20px;
+    margin-top: 100px;
+    text-align: center;
+    padding: 0px;
+}
+}
+@media only screen and (min-width: 1200px){
+    .header ul{
+        font-size: 25px;
+    }
+    .index{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .header__logo{
+    height: 60%;
+    margin-left: 50px;
+}
+    .header__btn{
+    font-size:x-large;
+}
+    .header__btn:hover{
+    font-size:x-large;
+}
+    .menuHamburguesa{
+    font-size: 50px;
+    margin-right: 50px;
+}
+    .textoPrincipal h1{
+        font-size: 60px;
+    }
+    .textoPrincipal p{
+    font-size: 35px;
+    }
+    .textoPrincipal button{
+    font-size: xx-large;
+    }
+    .nuestroServicio{
+    font-size: 25px;
+    height:90vh;
+    }
+    .nuestroServicio__pasos{
+    row-gap: 15px;
+    width: 70%;
+    margin: 0 15%;
+    }
+    .nuestroServicio__pasos p{
+    font-size: 20px;
+    }
+    .nuestroServicio__pasos strong{
+        font-size: 25px;
+    }
+    .nuestroServicio__pasos.imagen1{
+    background-size: auto 100%;
+    }
+    .nuestroServicio__pasos .imagen4{
+    background-size:auto 100%;
+}
+    .nuestroServicio__pasos .imagen5{
+    background-size:auto 100%;
+}
+.nuestrosClientes__titulo{
+    font-size: 35px;
+}
+.nuestrosClientes h6{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.nuestrosClientes{
+    height: 80vh;
+}
+.nuestrosClientes__galeria{
+height: 60vh;
+row-gap: 20px;
+}
+    .logoWTPflotante{
+        width:80px;
+        height: 80px;
+        z-index: 100;
+        line-height: 80px;
+        font-size: 50px;
+    }
+
+    .footer{
+        font-size: x-large;
+    }
+    .footer__btn button {
+        width: 150px;
+        height: 40px;
+        font-size: large;
+    }
+    .logos{
+        font-size: 40px;
+    }
+}
