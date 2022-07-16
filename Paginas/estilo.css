@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;1,500&display=swap');
 /* font-family: 'Kanit', sans-serif; */
+/* El color del logo es #FFA600
+Complementarios
+#B37400
+#FFAF19
+#004FB3
+#0070FF
+#FF0DAF 
+#AB19FF Violeta
+#19FF85 Verde Agua
+ */
 *{
     margin: 0px;
     padding: 0px;
@@ -47,13 +57,13 @@ animation-duration: 3s;
     color: #ffa600;
     font-size:x-small;
     background-color: rgba(138, 137, 137, 0.553);
-    border-color: rgba(255, 166, 0,1);
+    border-color: #B37400;
     border-radius: 15px;
     font-family: 'Kanit', sans-serif;
     cursor: pointer;
 }
 .menuHamburguesa{
-    color: #ffffff;
+    color: #fff;
     font-size: 30px;
     padding: 20px 0px 20px 30px;
     margin-right: 20px;
