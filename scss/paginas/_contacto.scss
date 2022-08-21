@@ -1,0 +1,27 @@
+.contacto {
+    background-image: url(../recursos/fondoNuestroServicio.svg);
+    background-size: cover;
+
+&__formularioContacto {
+    padding: 10px;
+    display: grid;
+    row-gap: 5px;
+    min-height: 100vh;
+    width: 75%;
+
+&__titulo {
+    color: $colorPrincipal;
+    font-size: 2em;
+    background-color: $colorFondoTitulosClaro;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: map-get($bordes, redondeo);
+    margin-top: 120px;
+}
+
+&__btn {
+    color: #fff;
+    font-size: x-large;
+    margin: 5px;}}}
